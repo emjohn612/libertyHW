@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body id="background-img" class="container-fluid">
+      <div class="container-fluid box">
+      <header class="row">
+        <div class="col-sm-12">
+          <h3>Request More Information</h3>
+        </div>
+      </header>
+      <main class="container-fluid">
+        <form name="myForm" class="container-fluid" action="/register" onsubmit="return validateForm()">
+          <section class="row">
+            <div class="drop-down col-sm-12">
+              <label>What degree type would you like?*</label>
+              <select id="degreeType">
+                <option value="">Select</option>
+                <option value="bachelors">Bachelors</option>
+                <option value="masters">Masters</option>
+                <option value="doctoral">Doctoral</option>
+              </select>
+            </div>
+          </section>
+          <section class="row">
+            <div class="drop-down col-sm-12">
+              <label>What would you like to study?*</label>
+              <select id="major" class="col-sm-12">
+                <option value="">Select degree type above</option>
+              </select>
+            </div>
+          </section>
+            <section class="row" id="no-wrap">
+              <div class="col-sm-6">
+                <label for="firstName">First Name*</label>
+                <input id="fName" type="text" name="firstName" title="Please enter your first name">
+              </div>
+              <div class="col-sm-6">
+                <label for="lastName">Last Name*</label>
+                <input id="lName" type="text" title="Please enter your last name" name="lastName">
+              </div>
+            </section>
+            <section class="row">
+              <div class="col-sm-12">
+                <label for="email">Email*</label>
+                <input id="email" type="email" name="email">
+              </div>
+            </section>
+            <section class="row">
+              <div class="col-sm-12">
+                <label for="clientTel">Telephone*</label>
+                <input id="tel" type="tel" name="clientTel">
+              </div>
+            </section>
+            <section class="row">
+              <div class="col-sm-12">
+                <label for="address">Address*</label>
+                <a class="addLink">Apt., P.O. box, or don't see your address?</a>
+                <input id="address" type="text" name="address" placeholder="Enter a Location">
+              </div>
+            </section>
+          <div class="row">
+            <div class="col-sm-12">
+              <input id="submit-form" class="btn submitButton" type="submit" value="Tell Me More">
+            </div>
+          </div>
+        </form>
+      </main>
+      <footer class="container-fluid">
+        <div class="container-fluid">
+          <article id="terms" class="row">
+            <div class="col-sm-12">
+              <p>
+                By submitting contact information through this form, I agree
+                that Liberty University and its affiliates may call and/or text
+                me about its offerings by any phone number i have provided and
+                may provide ing the future, including any wireless number,
+                using automated technology.<br><br>Message and data  rates may
+                apply. For additional information, text HELP to 49595 or 49596.
+                You may opt-out at any time by sending STOP to 49595 or 49596.
+                Visit for <a href="https://www.liberty.edu/informationservices/index.cfm?PID=31265">Terms & Conditions</a>
+                and <a href="http://www.liberty.edu/index.cfm?PID=6901">Privacy Policy</a>
+              </p>
+            </div>
+          </article>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="line col-sm-12">
+                <span class="lineTxt">
+                  OR
+                </span>
+              </div>
+            </div><br>
+          </div>
+            <section class="row">
+              <div id="applyNow" class="col-sm-12">
+                <a href="https://apply.liberty.edu/?acode=C20522&_ga=2.35268257.1465225731.1534110429-969898367.1533760072" class="btn applyButton" type="button" role="button">Apply Now</a>
+              </div>
+            </section>
+        </div>
+      </footer>
+      </div>
+      <script src="js/app.js"></script>
+    </body>
+</html>
