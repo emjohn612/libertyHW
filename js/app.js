@@ -1,5 +1,7 @@
 // Helper function to add event listener
 // Easy to add additional listeners
+
+
 function addEvent(el, event, callback) {
   if ('addEventListener' in el) {
     el.addEventListener(event, callback, false);
