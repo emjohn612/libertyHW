@@ -18,7 +18,7 @@ function addEvent(el, event, callback) {
 // Degree option and major sorter
 
 
-(function(){
+(function() {
   var type = document.getElementById('degreeType');
   var model = document.getElementById('major');
   var bachelors = {
@@ -67,68 +67,65 @@ function addEvent(el, event, callback) {
 
 
 function validateForm() {
-    var first   = document.getElementById('fName');
-    var last   = document.getElementById('lName');
-    var email = document.getElementById('email');
-    var tel = document.getElementById('tel');
-    var add = document.getElementById('address');
-    var degree = document.getElementById('degreeType');
-    var major = document.getElementById('major');
+  var first = document.getElementById('fName');
+  var last = document.getElementById('lName');
+  var email = document.getElementById('email');
+  var tel = document.getElementById('tel');
+  var add = document.getElementById('address');
+  var degree = document.getElementById('degreeType');
+  var major = document.getElementById('major');
 
-    if ( ! degree.value ) {
-        alert("Choose a degree type");
-        degree.focus();
-        return false;
-    }
+  if (!degree.value) {
+    alert("Choose a degree type");
+    degree.focus();
+    return false;
+  }
 
-    if ( ! major.value ) {
-        alert("Choose a major");
-        major.focus();
-        return false;
-    }
+  if (!major.value) {
+    alert("Choose a major");
+    major.focus();
+    return false;
+  }
 
-    if ( ! first.value ) {
-        alert("First name required");
-        first.focus();
-        return false;
-    }
+  if (!first.value) {
+    alert("First name required");
+    first.focus();
+    return false;
+  }
 
-    if ( ! last.value ) {
-        alert("Last name required");
-        last.focus();
-        return false;
-    }
+  if (!last.value) {
+    alert("Last name required");
+    last.focus();
+    return false;
+  }
 
-    if (! email.value)
-    {
-        alert("Please enter a valid e-mail address.");
-        email.focus();
-        return false;
-    }
+  if (!email.value) {
+    alert("Please enter a valid e-mail address.");
+    email.focus();
+    return false;
+  }
 
-    if (email.value.indexOf("@", 0) < 0)
-    {
-        alert("Please enter a valid e-mail address.");
-        email.focus();
-        return false;
-    }
+  if (email.value.indexOf("@", 0) < 0) {
+    alert("Please enter a valid e-mail address.");
+    email.focus();
+    return false;
+  }
 
-    if (email.value.indexOf(".", 0) < 0)
-    {
-        alert("Please enter a valid e-mail address.");
-        email.focus();
-        return false;
-    }
+  if (email.value.indexOf(".", 0) < 0) {
+    alert("Please enter a valid e-mail address.");
+    email.focus();
+    return false;
+  }
 
-    if ( ! tel.value ) {
-        alert("Telephone required");
-        tel.focus();
-        return false;
-    }
-    if ( ! add.value ) {
-        alert("Address required");
-        address.focus();
-        return false;
-    }
-    return true;
+  if (!tel.value) {
+    alert("Telephone required");
+    tel.focus();
+    return false;
+  }
+  if (!add.value) {
+    alert("Address required");
+    address.focus();
+    return false;
+  }
+  return true;
 }

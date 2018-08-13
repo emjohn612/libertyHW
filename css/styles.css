@@ -1,72 +1,85 @@
-html{
-    width:100%;
-    height:100%;
+html {
+  width: 100%;
+  height: 100%;
 }
-body{
-    width:100%;
-    height: auto;
-    background-size: cover;
-    background-image: url("img/background.jpeg");
-}
-.box {
-    margin: 50px 20px 50px 20px;
-    background-color: white;
-    padding-bottom: 10px;
-}
-header {
-    text-align: center;
-}
-.row {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-label {
-    float: left;
-}
-#degreeType {
-    width: 100%;
-    height: 30px;
-}
-#major {
-    width: 100%;
-    height: 30px;
-}
-input {
-    width: 100%;
 
+body {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-image: url("img/background.jpeg");
 }
+
+.box {
+  margin: 50px 20px 50px 20px;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+.row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+label {
+  float: left;
+}
+
+#degreeType {
+  width: 100%;
+  height: 30px;
+}
+
+#major {
+  width: 100%;
+  height: 30px;
+}
+
+input {
+  width: 100%;
+}
+
 .addLink {
-    float: right;
-    font-size: 13px;
+  float: right;
+  font-size: 13px;
 }
+
 .line {
-    width: 100%;
-    height: 9px;
-    border-bottom: 1px solid #b4b4b4;
-    text-align: center;
+  width: 100%;
+  height: 9px;
+  border-bottom: 1px solid #b4b4b4;
+  text-align: center;
 }
+
 .lineTxt {
-    color: #b4b4b4;
-    background-color: white;
-    padding: 0 10px;
+  color: #b4b4b4;
+  background-color: white;
+  padding: 0 10px;
 }
+
 article {
-    font-size: 10px;
-    color: #b4b4b4;
+  font-size: 10px;
+  color: #b4b4b4;
 }
+
 .submitButton {
-    display: block;
-    background-color: #3752A6;
-    color: white;
-    padding: 20px;
-    width: 100%;
-    font-size: 16px;
+  display: block;
+  background-color: #3752A6;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  font-size: 16px;
 }
+
 .applyButton {
-    display: block;
-    background-color: #3f9d43;
-    color: white;
-    padding: 20px;
-    width: 100%;
-    font-size: 16px;
+  display: block;
+  background-color: #3f9d43;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  font-size: 16px;
 }
